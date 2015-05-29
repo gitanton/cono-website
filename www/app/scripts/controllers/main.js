@@ -18,34 +18,34 @@ angular.module('conojoWebsiteApp')
         $scope.showBottom = true;
 
         $scope.openVideoPlay = function () {
-            $("#showVideo").append("<iframe src='//player.vimeo.com/video/126855836' frameborder='0'></iframe>").modal({
+            $('#showVideo').append('<iframe src="//player.vimeo.com/video/126855836" frameborder="0"></iframe>').modal({
                 backdrop: 'static',
                 keyboard: false
             });
-        }
+        };
 
         $scope.closeVideoPlay = function () {
-            $("iframe").remove();
-            $("#showVideo").modal("hide");
-        }
+            $('iframe').remove();
+            $('#showVideo').modal('hide');
+        };
 
         $scope.showTopScreenActive = function () {
             $scope.showTop = false;
             $scope.showVideo = true;
             $scope.showBottom = true;
-        }
+        };
 
         $scope.showVideoScreenActive = function () {
             $scope.showTop = true;
             $scope.showVideo = false;
             $scope.showBottom = true;
-        }
+        };
 
         $scope.showBottomScreenActive = function () {
             $scope.showTop = true;
             $scope.showVideo = true;
             $scope.showBottom = false;
-        }
+        };
 
         //$scope.showStepTwo = function(){
         //    $scope.giftStepOne = false;
@@ -97,12 +97,12 @@ angular.module('conojoWebsiteApp')
         //}
 
         $scope.selectPlan = function (event) {
-            $(event.target).parent().siblings().removeClass("pricing-item-selected").addClass("pricing-item");
-            $(event.target).parent().removeClass("pricing-item").addClass("pricing-item-selected");
-        }
+            $(event.target).parent().siblings().removeClass('pricing-item-selected').addClass('pricing-item');
+            $(event.target).parent().removeClass('pricing-item').addClass('pricing-item-selected');
+        };
 
         $scope.goToSignup = function () {
-            var url = 'http://conojoapp.scmreview.com/#/register';
+            var url = 'http://app.conojo.com/#/register';
             window.open(url);
-        }
+        };
     });

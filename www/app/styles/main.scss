@@ -3,6 +3,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$font-titillium: 'Titillium Web', sans-serif;
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -13,28 +15,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 /* Space out content a bit */
 body{
     text-align:center;
-    font-family:'TitilliumWeb-Light','TitilliumWeb-Regular','TitilliumWeb-SemiBold';
-}
-@font-face {
- font-family: 'TitilliumWeb-Light';
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-Light.ttf');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-Light.eot');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-Light.svg');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-Light.woff');
-}
-@font-face {
- font-family: 'TitilliumWeb-Regular';
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-Regular.ttf');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-Regular.eot');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-Regular.svg');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-Regular.woff');
-}
-@font-face {
- font-family: 'TitilliumWeb-SemiBold';
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-SemiBold.ttf');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-SemiBold.eot');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-SemiBold.svg');
- src:url('../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/TitilliumWeb-SemiBold.woff');
+    font-family: $font-titillium;
 }
 
 .container{
@@ -49,7 +30,7 @@ body{
     border:2px solid #fff;
     padding:15px;
     background:none;
-    font-family:'TitilliumWeb-Regular';
+    font-family:$font-titillium;
 }
 
 .header{
@@ -59,7 +40,7 @@ body{
     border-bottom:2px solid #e1e1e1;
     .header-container{
         height:51px;
-        font-family:'TitilliumWeb-Regular';
+        font-family:$font-titillium;
         .header-logo{
             padding:0px;
         }
@@ -102,12 +83,13 @@ body{
             }
             height:112px;
             .footer-top-left{
-                font-family:'TitilliumWeb-SemiBold';
+                font-family:$font-titillium;
+                font-weight: 600;
                 font-size:33px;
                 padding:30px 0px;
             }
             .footer-top-right{
-                font-family:'TitilliumWeb-Regular';
+                font-family:$font-titillium;
                 font-size:16px;
                 padding:45px 0px;
             }
@@ -124,12 +106,13 @@ body{
                 }
             }
             .footer-top-left{
-                font-family:'TitilliumWeb-SemiBold';
+                font-family:$font-titillium;
+                font-weight: 600;
                 font-size:30px;
                 padding:30px 0px;
             }
             .footer-top-right{
-                font-family:'TitilliumWeb-Regular';
+                font-family:$font-titillium;
                 font-size:16px;
                 padding:45px 0px;
             }
@@ -489,12 +472,13 @@ body{
                     .pricing-item-topTitle{
                         font-size:24px;
                         color:#323232;
-                        font-family:'TitilliumWeb-SemiBold';
+                        font-family:$font-titillium;
+                        font-weight: 600;
                     }
                     .pricing-item-topSubTitle{
                         font-size:18px;
                         color:#777777;
-                        font-family:'TitilliumWeb-Regular';
+                        font-family:$font-titillium;
                     }
                 }
                 .pricing-item-bottom{
@@ -506,7 +490,7 @@ body{
                         height:30px;
                         span{
                             color:#222222;
-                            font-family:'TitilliumWeb-Regular'; 
+                            font-family:$font-titillium; 
                         }
                     }
                 }
@@ -532,11 +516,12 @@ body{
                     padding:35px 0px;
                     .pricing-item-topTitle{
                         font-size:24px;
-                        font-family:'TitilliumWeb-SemiBold';
+                        font-family:$font-titillium;
+                        font-weight: 600
                     }
                     .pricing-item-topSubTitle{
                         font-size:18px;
-                        font-family:'TitilliumWeb-Regular';
+                        font-family:$font-titillium;
                     }
                 }
                 .pricing-item-bottom{
@@ -546,7 +531,7 @@ body{
                         font-size:18px;
                         height:30px;
                         span{
-                            font-family:'TitilliumWeb-Regular'; 
+                            font-family:$font-titillium; 
                         }
                     }
                 }
@@ -698,7 +683,7 @@ body{
             width:580px;
             height:812px;
             padding-top:60px;
-            font-family:'TitilliumWeb-Regular';
+            font-family:$font-titillium;
             border-bottom:2px solid #ececed;
             text-align:left;
             .blog-item-title{
@@ -732,7 +717,7 @@ body{
         }
         .blog-container-right{
             margin-top:60px;
-            font-family:'TitilliumWeb-Regular';
+            font-family:$font-titillium;
             .blog-container-right-content{
                 width:260px;
                 .blog-search{
@@ -851,7 +836,7 @@ body{
         height:1440px;
         margin:0 auto;
         padding:50px 0px 100px;
-        font-family:'TitilliumWeb-Regular';
+        font-family:$font-titillium;
         .contact-title{
             color:#323232;
             font-size:36px;
@@ -893,11 +878,12 @@ body{
             height:310px;
             font-size:24px;
             .contact-bottom-title{
-                font-family:'TitilliumWeb-Regular';
+                font-family:$font-titillium;
             }
             .contact-bottom-app{
                 margin-top:50px;
-                font-family:'TitilliumWeb-SemiBold';
+                font-family:$font-titillium;
+                font-weight: 600;
             }
         }
     }
@@ -913,7 +899,7 @@ body{
         margin-right:auto;
         .col-xs-12,.col-xs-9,col-xs-3{padding:0px;}
         .about-container-left{
-            font-family:'TitilliumWeb-Regular';
+            font-family:$font-titillium;
             .about-item{
                 width:260px;
                 height:285px;
