@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Super cool white board app for your iPhone and iPad.">
+<meta name="keywords" content="white board, app">
+<meta name="author" content="Space Chimp Media">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- SITE TITLE -->
+	<title>Conojo Whiteboard | Your Interactive Drawing Tool</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+<!-- FONT ICONS -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css" type="text/css">
+<link rel="stylesheet" href="assets/app-icons/styles.css" type="text/css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="css/nivo-lightbox.css" type="text/css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css" type="text/css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+<!-- Boot Slider -->
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
+<link href="css/bootslider.css" rel="stylesheet" type="text/css" />
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> 
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css" type="text/css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+
+<!-- =========================
+     HEADER   
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
+
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#"><img src="images/conojo_logo_small.svg" alt=""></a>
+				
+			</div>
+			
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="kane-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Functions</a></li>
+					<li><a href="#brief1">Tools</a></li>
+						<li><a href="#templates">Pre-Made Templates</a></li>
+					<li><a href="#brief2">Who is it for?</a></li>
+					<li><a href="#reviews">Reviews</a></li>
+					<li><a href="#screenshot-section">Inspiration</a></li>
+					<li><a href="#download">Contact</a></li>
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
+	
+	
+	<!-- CONTAINER -->
+	<div class="container">
+		
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<img src="images/conojo_logo_big.svg" alt="">
+				</div>
+			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
+		
+		<div class="row home-contents">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+					
+					<!-- WELCOM MESSAGE -->
+					<h1 class="dark-text">Conojo Whiteboard</h1>
+					<h4>A powerful whiteboard app for iPad.</h4>
+					<!-- BUTTON -->
+					<div class="buttons" id="download-button">
+						
+							<a href="https://itunes.apple.com/us/app/conojo-5-in-1-whiteboard-app/id664687436?mt=8" target="_blank" class="btn btn-default btn-lg standard-button"><img src="images/app_store.png" class="img-responsive" alt=""></a>
+						
+					</div>
+					<!-- /END BUTTONS -->
+					
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
+				
+			</div>
+			
+			
+			<div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+			    
+			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
+			    <div class="phone-image">
+			    <img src="images/conojo_ipad_hand.png" class="img-responsive" alt="">
+			    </div>
+			    
+			</div>
+			
+		</div>
+		<!-- /END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
+
+<!-- =========================
+     FEATURES 
+============================== -->
+<section class="features" id="features">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Record, Collaborate, & Share In Real-Time</h2>
+		<div class="section-description">
+			Conojo is an innovative drawing tool that makes it easier to share ideas, images, notes, and any other visual manifestation you can think of. From the technologically savvy to first time iPad users, Conojo makes anyone an artist or data wizard. 
+		</div>
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	
+	<div class="row">
+		
+		<!-- FEATURES LEFT -->
+		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="150" data-wow-duration="1.5s">
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<!-- <div class="icon">-->
+						<img src="images/icons/conojo_icon_record.png" class="img-responsive" alt="">
+					<!-- </div> -->
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Record Live</h4>
+					<p>
+					Narrate and record your in-app brainstorming sessions and export them to social media and email in seconds. 
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+						<img src="images/icons/conojo_icon_collaborate.png" class="img-responsive" alt="">
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Team Collaboration</h4>
+					<p>
+					Work live with colleagues, classmates, or friends to freely coordinate and communicate. 
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+						<img src="images/icons/conojo_icon_share.png" class="img-responsive" alt="">
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Easily Share</h4>
+					<p>
+					Seamlessly share your designs with friends and colleagues via email, Facebook, Twitter, Evernote, and more. 
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+		</div>
+		<!-- /END FEATURES LEFT -->
+		
+		<!-- PHONE IMAGE -->
+		<div class="col-md-8 col-sm-4">
+			<div class="phone-image wow fadeInRight animated" data-wow-offset="120" data-wow-duration="1.5s">
+				<img src="images/conojo_ipad_features.jpg" class="img-responsive" alt="">
+			</div>
+		</div>
+		
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+<!-- =========================
+     BRIEF LEFT SECTION 
+============================== -->
+<section class="app-brief grey-bg" id="brief1">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">State of the Art Design Tools</h2>
+		<div class="section-description">
+			Conojo is an all-in-one whiteboard where you can utilize drawing tools, templates, and data mapping to clearly convey your ideas with a team. 
+		</div>
+		<br><br><img src="images/icons/conojo_tools.png" class="img-responsive" alt="">
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row">
+		<!-- PHONES IMAGE -->
+		<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div>
+				<img src="images/conojo_ipad_tools.png" class="img-responsive" alt="">
+			</div>
+		</div>
+		<br><br>
+		
+		<!-- RIGHT SIDE WITH BRIEF -->
+		<div class="col-lg-6 col-md-12  col-sm-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<!-- FEATURE LIST -->
+			<ul class="feature-list">
+				<li><i class="icon_stop"></i>Work with a multitude of helpful tools for free hand drawing or creating unique concept maps.</li>
+				<li><i class="icon_stop"></i>Type up notes with over 100 stylish fonts.</li>
+				<li><i class="icon_stop"></i>Effortlessly import and export project files, compatible with all major file types.</li>
+				<li><i class="icon_stop"></i>Learn more with our numerous Training Videos and ‘Learn How to Draw’ Videos for beginners.</li>
+			</ul>
+			
+		</div>
+		<!-- /END RIGHT BRIEF -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+<!-- =========================
+     BRIEF LEFT SECTION 
+============================== -->
+<section class="app-brief" id="templates">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Convenient Templates</h2>
+		<div class="section-description">
+			Stay efficient with our useful pre-made templates for quick brainstorming, note taking, or wire framing.
+		</div>
+		<div class="row">
+        <br><br><div class="col-lg-12 col-md-12 col-sm-12 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s"><img src="images/conojo_template.jpg" class="img-responsive" alt="">
+	    </div>
+            
+		</div>
+        <!-- /END ROW -->
+	</div>
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+
+<!-- =========================
+     BRIEF RIGHT SECTION 
+============================== -->
+<section class="app-brief grey-bg" id="brief2">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Visualize & Create with Conojo</h2>
+		<div class="section-description">
+			Conojo has been designed for everyone from professionals such as architects, lawyers, creatives, sales professionals, engineers, and medical professionals to students, teachers, and parents.
+		</div>
+	</div>
+	
+    <div class="row">
+	<div class="bootslider" id="bootslider">
+
+    <!-- Bootslider Loader -->
+    <div class="bs-loader">
+        <img src="images/loading.gif" width="31" height="31" alt="Loading.." id="loader"/>
+    </div>
+    <!-- /Bootslider Loader -->
+
+    <!-- Bootslider Container -->
+    <div class="bs-container">
+        <!-- Bootslider Slide -->
+        <div class="bs-slide active">
+            <div class="bs-foreground">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-right slide-biz">
+                    <h2 class="dark-text">
+                    Made for Business
+                   </h2>
+                   <p>
+                    Keep on track with your team. Collaborate and communicate live on projects with co-workers and clients.
+                   </p>
+                  </div>
+               </div>
+             </div>
+            </div>
+            <div class="bs-background">
+               <img src="images/conojo_business.jpg" />
+            </div>
+        </div>
+        <!-- /Bootslider Slide -->
+        <!-- Bootslider Slide -->
+        <div class="bs-slide">
+          <div class="bs-foreground">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-left slide-edu">
+                    <h2 class="dark-text">
+                    Made for Education
+                   </h2>
+                   <p>
+                    Make learning a streamlined and fun process. Take detailed notes and share them with classmates, friends, and teachers. 
+                   </p>
+               </div>
+             </div>
+            </div>
+          </div>
+            <div class="bs-background">
+                <img src="images/conojo_education.jpg" />
+            </div>
+        </div>
+        <!-- /Bootslider Slide -->
+    </div>
+    <!-- /Bootslider Container -->
+
+    <!-- Bootslider Progress -->
+    <div class="bs-progress progress">
+        <div class="progress-bar progress-primary"></div>
+    </div>
+    <!-- /Bootslider Progress -->
+
+    <!-- Bootslider Thumbnails -->
+    <div class="bs-thumbnails">
+        <ul class=""></ul>
+    </div>
+    <!-- /Bootslider Thumbnails -->
+
+    <!-- Bootslider Pagination -->
+    <div class="bs-pagination">
+        <ul class="pagination"></ul>
+    </div>
+    <!-- /Bootslider Pagination -->
+
+    <!-- Bootslider Controls -->
+    <div class="bs-controls text-center">
+                <div class="btn-group">
+                    <a href="javascript:void(0);" class="btn btn-primary bs-prev">&lt;</a>
+                    <a href="javascript:void(0);" class="btn btn-primary bs-next">&gt;</a>
+                </div>
+            </div>
+    <!-- /Bootslider Controls -->
+
+     </div>
+        
+  <!-- END ROW -->      
+</div>
+		
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+
+<!-- =========================
+     TESTIMONIALS 
+============================== -->
+<section class="testimonials" id="reviews">
+
+<div class="color-overlay">
+	
+	<div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- FEEDBACKS -->
+		<div id="feedbacks" class="owl-carousel owl-theme">
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/conojo_app_review_zone.jpg" alt="">
+				</div>
+				
+				<div class="message">
+					 This is what a whiteboard app should be. The Conojo 5-in-1 whiteboard iPad app is more than the average whiteboard application.  It combines a whiteboard with a social app, with a video app to form one extremely useful and cohesive business training tool.
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMATION -->
+				<div class="name">
+					John McNamara
+				</div>
+				<div class="company-info">
+					App Review Zone
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/conojo_life_hacker.jpg" alt="">
+				</div>
+				
+				<div class="message">
+					 Conojo is a Flexible Whiteboard and Drawing App for iPad. If drawing out your ideas or sketching wireframes, diagrams, or mind maps on your iPad is the way you brainstorm, Conojo can accommodate you. It’s designed to help you whiteboard freely, and has tools to draw, expand on, and export your ideas.
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMATION -->
+				<div class="name">
+					Lifehacker
+				</div>
+				<div class="company-info">
+					lifehacker.com
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/conojo_wire_service.jpg" alt="">
+				</div>
+				
+				<div class="message">
+					 Probably the most interesting and powerful feature of Conojo is the collaborative and social capabilities of the app. If you’re in a household with more than one iPad, you can link up via Bluetooth or Wi-Fi, and work collaboratively with your child on the same digital whiteboard. This is a truly fantastic feature, which allows powerful collaborative learning and sharing between teacher & student.
+
+One of the cheapest but most effective apps for homeschoolers, this one is well worth a go.
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMATION -->
+				<div class="name">
+					5 of The Best Apps for Homeschooling
+				</div>
+				<div class="company-info">
+					WireService.co
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+		</div>
+		<!-- /END FEEDBACKS -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+	
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END TESTIMONIALS SECTION -->
+
+<!-- =========================
+     SCREENSHOTS
+============================== -->
+<section class="screenshots grey-bg" id="screenshot-section">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Inspiration</h2>
+		<p>See what's possible with works created by the Conojo app from around the world. (Click on images to view larger)</p>
+		
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<div id="screenshots" class="owl-carousel owl-theme">
+			
+			<div class="shot">
+				<a href="images/screenshots/conojo_share.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/conojo_share.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/conojo_type.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/conojo_type.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/conojo_straightline.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/conojo_straightline.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/conojo_shape.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/conojo_shape.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/conojo_import.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/conojo_import.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/conojo_template.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/conojo_template_3.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/conojo_template_2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/conojo_template_2.jpg" alt="Screenshot"></a>
+			</div>
+			
+		</div>
+		<!-- /END SCREENSHOTS -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SCREENSHOTS SECTION -->
+
+
+<!-- =========================
+     SERVICES
+============================== -->
+<section class="services" id="services">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">More Information</h2>
+		<p>Learn more about Conojo through in-depth reviews and our 24/7 help desk.</p>
+		
+		
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row">
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_documents_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Press Reviews</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>Read what the press has to say about Conojo</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_film"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Video Reviews</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>See others use and review Conojo.</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<a href="https://vizmo.zendesk.com/hc/en-us" target="_blank"><i class="icon_chat_alt"></i></a>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Conojo Support</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 Get answers for your queries with our 24/7 Support Panel.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+<!-- =========================
+     DOWNLOAD NOW 
+============================== -->
+<section class="download" id="download">
+
+<div class="color-overlay">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- SUBSCRIPTION FORM WITH TITLE -->
+				<div class="subscription-form-container">
+					
+					<h1 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Stay Updated</h1>
+					<h4 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Subscribe to our mailing list for the latest news on Conojo.</h4>
+					
+					<!-- =====================
+					     MAILCHIMP FORM STARTS 
+					     ===================== -->
+					
+					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
+						
+						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+						<h4 class="subscription-success"></h4>
+						<h4 class="subscription-error"></h4>
+						
+						<!-- EMAIL INPUT BOX -->
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<!-- SUBSCRIBE BUTTON -->
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button2">Subscribe</button>
+						
+					</form>
+					<!-- /END MAILCHIMP FORM STARTS -->
+					
+					<!-- =====================
+					     LOCAL TXT FORM STARTS 
+					     ===================== -->
+					     
+					<!-- THIS FORM IS COMMENTED TO HIDE 
+					
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+						
+						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
+						<h4 class="subscription-error">Something Wrong!</h4>
+						
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+						
+					</form>
+					
+					-->
+					
+					<!-- / LOCAL TXT SAVING FORM END -->
+
+				</div>
+                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+				
+			</div> 
+			<!-- END COLUMN -->
+			
+		</div> 
+		<!-- END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END DOWNLOAD SECTION -->
+
+
+<!-- =========================
+     FOOTER 
+============================== -->
+<footer>
+
+<div class="container">
+	
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
+		
+		<a class="btn contact-button expand-form"><i class="icon_mail_alt"></i></a>
+		
+		<!-- EXPANDED CONTACT FORM -->
+		<div class="row expanded-contact-form">
+			
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- FORM -->
+				<form class="contact-form" id="contact" role="form">
+					
+					<!-- IF MAIL SENT SUCCESSFULLY -->
+					<h4 class="success">
+						<i class="icon_check"></i> Your message has been sent successfully.
+					</h4>
+					
+					<!-- IF MAIL SENDING UNSUCCESSFULL -->
+					<h4 class="error">
+						<i class="icon_error-circle_alt"></i> E-mail must be valid and message must be longer than 1 character.
+					</h4>
+					
+					<div class="col-md-6">
+						<input class="form-control input-box" id="name" type="text" name="name" placeholder="Your Name">
+					</div>
+					
+					<div class="col-md-6">
+						<input class="form-control input-box" id="email" type="email" name="email" placeholder="Your Email">
+					</div>
+					
+					<div class="col-md-12">
+						<input class="form-control input-box" id="subject" type="text" name="subject" placeholder="Subject">
+						<textarea class="form-control textarea-box" id="message" rows="8" placeholder="Message"></textarea>
+					</div>
+					
+					<button class="btn btn-primary standard-button ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">Send Message</button>
+					
+				</form>
+				<!-- /END FORM -->
+				
+			</div>
+			
+		</div>
+		<!-- /END EXPANDED CONTACT FORM -->
+		
+	</div>
+	<!-- /END CONTACT BOX -->
+	
+	<!-- LOGO -->
+	<img src="images/conojo_logo_big.svg" alt="LOGO" class="responsive-img">
+	
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href="https://www.facebook.com/conojo.Whiteboard" target="_blank"><i class="social_facebook_square"></i></a></li>
+		<li><a href="https://twitter.com/VizMojoLabs" target="_blank"><i class="social_twitter_square"></i></a></li>
+	</ul>
+	
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright">
+		©2014 Conojo Whiteboard, Viz Mojo Labs, Inc. All Rights Reserved.
+	</p>
+
+</div>
+<!-- /END CONTAINER -->
+ 
+</footer>
+<!-- /END FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+<script src="js/jquery.grozav.plugins.js" type="text/javascript"></script>
+<script src="js/jquery.grozav.bootslider.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+            $(document).ready(function() {
+                var slider = new bootslider('#bootslider', {
+                    animationIn: "fadeInUp",
+                    animationOut: "flipOutX",
+                    timeout: 5000,
+                    autoplay: false,
+                    preload: true,
+                    pauseOnHover: false,
+                    thumbnails: false,
+                    pagination: false,
+                    mousewheel: false,
+                    keyboard: true,
+                    touchscreen: true,
+                    layout: 'default',
+                    canvas: {
+                        width: 1440,
+                        height: 720
+                    }
+                });
+                slider.init();
+            });
+        </script>
+
+</body>
+</html>
