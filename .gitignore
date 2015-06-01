@@ -3,3 +3,10 @@
 *.iml
 *.iws
 *.sass-cache/
+
+www/.tmp
+www/node_modules
+www/bower_components
+www/dist
+www/npm-debug.log
+www/website-new-app/.tmp
