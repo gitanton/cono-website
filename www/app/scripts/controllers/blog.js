@@ -8,7 +8,8 @@
  * Controller of the conojoWebsiteApp
  */
 angular.module('conojoWebsiteApp')
-    .controller('BlogCtrl', function ($scope) {
+    .controller('BlogCtrl', function ($scope,ENV) {
+        $scope.envServer = ENV.envServer;
         $scope.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',

@@ -40,4 +40,9 @@ angular
             .otherwise({
                 redirectTo: '/'
             });
+    })
+    .factory('ENV', function () {
+        return {
+            envServer: 'http://app.conojo.com'
+        }
     });
