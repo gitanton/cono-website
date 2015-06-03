@@ -44,5 +44,5 @@ angular
     .factory('ENV', function () {
         return {
             envServer: 'http://app.conojo.com'
-        }
+        };
     });
