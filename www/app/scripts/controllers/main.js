@@ -15,7 +15,7 @@ angular.module('conojoWebsiteApp')
         $scope.showBottom = true;
 
         $scope.openVideoPlay = function () {
-            $('#showVideo').append('<iframe src="https://vimeo.com/124664015" frameborder="0"></iframe>').modal({
+            $('#showVideo').append('<iframe src="//vimeo.com/124664015" frameborder="0"></iframe>').modal({
                 backdrop: 'static',
                 keyboard: false
             });
