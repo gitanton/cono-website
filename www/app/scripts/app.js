@@ -24,7 +24,9 @@ angular
         $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
+                controller: 'MainCtrl',
+                title: 'Collaboration & Prototyping Tool | UI/UX, Video, Files',
+                description: 'The most comprehensive creative collaboration platform there is. Get feedback on UI/UX, video and files in real-time. Get started with our free trial.'
             })
             .when('/blog', {
                 templateUrl: 'views/blog.html',
@@ -32,7 +34,9 @@ angular
             })
             .when('/contact', {
                 templateUrl: 'views/contact.html',
-                controller: 'ContactCtrl'
+                controller: 'ContactCtrl',
+                title: 'Contact Us | Conojo Collaboration Platform',
+                description: 'Contact Conojo | The most comprehensive creative collaboration platform there is. Get feedback on UI/UX, video and files in real-time.'
             })
             .when('/about', {
                 templateUrl: 'views/about.html',
@@ -46,4 +50,10 @@ angular
         return {
             envServer: 'http://app.conojo.com'
         };
-    });
+    })
+    .run(['$location', '$rootScope', function($location, $rootScope) {
+        $rootScope.$on('$routeChangeSuccess', function (event, current) {
+            $rootScope.title = current.$$route.title;
+            $rootScope.description = current.$$route.description;
+        });
+    }]);
