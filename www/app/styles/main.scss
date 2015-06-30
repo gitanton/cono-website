@@ -295,7 +295,7 @@ body{
       .startLink{
         @extend .getStarted;
         margin-top:45px;
-        a{color:#fff;}
+        a{color:#fff;cursor:pointer;}
       }
     }
   }
@@ -321,7 +321,7 @@ body{
             .startLink{
               @extend .getStarted;
               margin-top:70px;
-              a{color:#fff;}
+              a{color:#fff;cursor:pointer;}
             }
         }
     }
@@ -353,7 +353,7 @@ body{
               @extend .getStarted;
               border:2px solid #0378ae;
               margin-top:45px;
-              a{color:#0378ae;}
+              a{color:#0378ae;cursor:pointer;}
             }
         }
     }
@@ -380,7 +380,7 @@ body{
               @extend .getStarted;
               border:2px solid #0378ae;
               margin-top:60px;
-              a{color:#0378ae;}
+              a{color:#0378ae;cursor:pointer;}
             }
         }
     }
@@ -409,7 +409,7 @@ body{
               @extend .getStarted;
               border:2px solid #0378ae;
               margin-top:100px;
-              a{color:#0378ae;}
+              a{color:#0378ae;cursor:pointer;}
             }
         }
     }
