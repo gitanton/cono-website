@@ -85,6 +85,21 @@ body{
     }
 }
 
+@media screen and (max-width:992px){
+    .header{
+        .header-container{
+            .header-menu{
+                .navbar{
+                    li{
+                        padding:0px !important;
+                        a{padding: 8px !important;}
+                    }
+                }
+            }
+        }
+    }
+}
+
 .footer{
     @media screen and (min-width:768px){
         .footer-top{
